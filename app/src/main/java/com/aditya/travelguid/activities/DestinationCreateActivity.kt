@@ -1,14 +1,15 @@
 package com.aditya.travelguid.activities
 
 import android.os.Bundle
-
+import android.support.V7.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatActivity
-import com.aditya.travelguid.R
-import com.aditya.travelguid.helpers.SampleData
-import com.smartherd.globofly.models.Destination
+import com.smartherd.globofly.R
+import com.smartherd.globofly.R.helpers.SampleData
+import com.aditya.travelguid.models.Destination
+import com.smartherd.globofly.R
 import kotlinx.android.synthetic.main.activity_destiny_create.*
 
-class DestinationCreateActivity : AppCompatActivity(){
+class DestinationCreateActivity : AppCompatActivity()
 
 
 	override fun onCreate(savedInstanceState: Bundle?) {
