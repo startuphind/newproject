@@ -1,6 +1,7 @@
 package com.aditya.travelguid.helpers
 
-import com.aditya.travelguid.models.Destination
+
+import com.smartherd.globofly.models.Destination
 import java.util.*
 
 object SampleData {
