@@ -2,11 +2,14 @@ package com.aditya.travelguid.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import com.aditya.travelguid.R
 import com.aditya.travelguid.helpers.SampleData
-import com.aditya.travelguid.models.Destination
+import com.smartherd.globofly.activities.DestinationListActivity
+import com.smartherd.globofly.models.Destination
+
 import kotlinx.android.synthetic.main.activity_destiny_detail.*
 
 
