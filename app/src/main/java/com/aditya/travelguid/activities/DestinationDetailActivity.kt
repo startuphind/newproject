@@ -1,10 +1,13 @@
 package com.aditya.travelguid.activities
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 
 import android.view.MenuItem
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.aditya.travelguid.R
 import com.aditya.travelguid.helpers.SampleData
 import com.smartherd.globofly.activities.DestinationListActivity
@@ -19,7 +22,7 @@ class DestinationDetailActivity : AppCompatActivity() {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_destiny_detail)
 
-		setSupportActionBar(detail_toolbar)
+		setSupportActionBar(detail_toolbar as Toolbar?)
 		// Show the Up button in the action bar.
 		supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
@@ -37,6 +40,7 @@ class DestinationDetailActivity : AppCompatActivity() {
 		}
 	}
 
+	@RequiresApi(Build.VERSION_CODES.O)
 	private fun loadDetails(id: Int) {
 
 		// To be replaced by retrofit code
@@ -47,7 +51,7 @@ class DestinationDetailActivity : AppCompatActivity() {
 			et_description.setText(destination.description)
 			et_country.setText(destination.country)
 
-			collapsing_toolbar.title = destination.city
+			collapsing_toolbar.tooltipText = destination.city
 		}
 	}
 

@@ -3,6 +3,7 @@ package com.aditya.travelguid.activities
 import android.os.Bundle
 
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.aditya.travelguid.R
 import com.aditya.travelguid.helpers.SampleData
 import com.smartherd.globofly.models.Destination
@@ -16,7 +17,7 @@ class DestinationCreateActivity : AppCompatActivity(){
 		setContentView(R.layout.activity_destiny_create)
 
 
-		setSupportActionBar(toolbar)
+		setSupportActionBar(toolbar as Toolbar?)
 		val context = this
 
 		// Show the Up button in the action bar.
