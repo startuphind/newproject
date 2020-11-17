@@ -2,10 +2,13 @@ package com.smartherd.globofly.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import com.smartherd.globofly.R
+import androidx.appcompat.app.AppCompatActivity
+import com.aditya.travelguid.R
+import com.aditya.travelguid.activities.DestinationCreateActivity
+import com.aditya.travelguid.helpers.SampleData
+
 import com.smartherd.globofly.helpers.DestinationAdapter
-import com.smartherd.globofly.helpers.SampleData
+
 import kotlinx.android.synthetic.main.activity_destiny_list.*
 
 class DestinationListActivity : AppCompatActivity() {
